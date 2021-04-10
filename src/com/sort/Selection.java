@@ -11,18 +11,15 @@ public class Selection {
      * @param c
      */
     public static void sort(Comparable[] c){
-        int count = 0;
         for (int i = 0; i < c.length - 2; i++) {
             int minIndex = i;
             for (int j = i+1 ; j < c.length; j++) {
-                    count++;
                 if (greater(c[minIndex],c[j])){
                     minIndex=j;
                 }
             }
             exch(c,i,minIndex);
         }
-        System.out.println(count);
     }
 
     /** 比较V元素是否大于w元素

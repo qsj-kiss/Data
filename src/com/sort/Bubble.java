@@ -11,16 +11,13 @@ public class Bubble {
      * @param c
      */
     public static void sort(Comparable[] c){
-        int count = 0;
         for (int length = c.length - 1; length > 0; length--) {
             for (int j=0;j<length;j++){
-                count ++;
                 if (greater(c[j],c[j+1])){
                     exch(c,j,j+1);
                 }
             }
         }
-        System.out.println(count);
     }
 
     /** 比较V元素是否大于w元素
