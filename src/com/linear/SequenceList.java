@@ -157,7 +157,6 @@ public class SequenceList<T> implements Iterable<T> {
         return -1;
     }
 
-
     /**
      *扩容判断方法
      */
@@ -183,7 +182,6 @@ public class SequenceList<T> implements Iterable<T> {
      * @param newSize
      */
     private void resize(int newSize) {
-
         //定义一个临时数组指向原数据
         T[] temp = arr;
         //创建新数组
